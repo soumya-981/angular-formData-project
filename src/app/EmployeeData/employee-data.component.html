@@ -1,5 +1,18 @@
-
+<div class="main">
 <div *ngFor = "let data of userData"> 
   {{this.data.id}}
   {{this.data.name}}
+</div>
+
+<br/>
+
+<button (click)=onClick()>Details</button>
+
+<br/>
+<div>
+{{ this.employeeData.name}}
+{{ this.employeeData.email}}
+ {{ this.employeeData.age}}
+</div>
+
 </div>

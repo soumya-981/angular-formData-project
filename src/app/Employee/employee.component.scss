@@ -2,6 +2,10 @@
   padding: 1.5rem;
   display:flex;
   flex-direction: column;
+  .title{
+    text-align: center;
+    font-weight: bold;
+  }
   
 }
 
@@ -12,7 +16,7 @@
 }
 
 .submitButton {
-  padding-left: 1rem;
+  padding-left: 1.25rem;
 }
 
 .container {

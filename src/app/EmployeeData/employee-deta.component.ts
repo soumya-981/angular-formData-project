@@ -12,9 +12,13 @@ export class EmployeeDataComponent implements OnInit {
   employeeData = {};
   userData = [];
   ngOnInit() {
-  this.employeeData = this._user.employee;
-  console.log("inside employeeData", this.employeeData);
+ 
   this._user.methodCall().subscribe(productdata => this.userData = productdata);
+  }
+
+  onClick():void {
+    this.employeeData = this._user.getEmployeeDetails();
+    console.log("inside employeeData", this.employeeData);
   }
    
 }
