@@ -1,0 +1,25 @@
+<div class="main">
+<div> Employee Form </div>
+<br/>
+<form class="form-group" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+ 
+<div class ="container">
+<label class="tag">Name:</label>
+<input type="text" placeholder="Enter the Name" formControlName="name"/>
+</div>
+
+<div class ="container">
+<label class="tag">Email:</label>
+<input type="text" placeholder="Enter the Email" formControlName="email"/>
+</div>
+
+
+<div class ="container">
+<label class="tag">Age:</label>
+<input type="text" placeholder="Enter the Age" formControlName="age"/>
+</div>
+<br/>
+<input type = "submit" value = "Send">
+</form>
+
+</div>
