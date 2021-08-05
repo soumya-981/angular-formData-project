@@ -1,5 +1,19 @@
-
+<div class="main">
+  <p>Getting data from json place holder</p>
 <div *ngFor = "let data of userData"> 
   {{this.data.id}}
   {{this.data.name}}
+</div>
+
+<br/>
+
+<button (click)=onClick()> Employee Details</button>
+
+<br/>
+<div>
+{{ this.employeeData.name}}
+{{ this.employeeData.email}}
+ {{ this.employeeData.age}}
+</div>
+
 </div>

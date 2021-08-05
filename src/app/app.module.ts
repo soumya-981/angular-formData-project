@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './Employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from '../service/user.service';
-import { EmployeeDataComponent } from './EmployeeData/employee-deta.component';
+import { EmployeeDataComponent } from './EmployeeData/employee-data.component';
 
 
 @NgModule({

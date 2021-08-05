@@ -20,8 +20,7 @@ export class EmployeeComponent implements OnInit {
   }
 
   onSubmit(): void {
-
-    this._user.employee ={...this.myForm.value};
+   this._user.setEmployeeDetails(this.myForm.value);   
     console.log('Your form data : ', this.myForm.value);
   }
 }
