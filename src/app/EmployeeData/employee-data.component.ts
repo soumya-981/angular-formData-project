@@ -11,10 +11,22 @@ export class EmployeeDataComponent implements OnInit {
   constructor(private _user: UserService) {}
   employeeData = {};
   userData = [];
-  ngOnInit() {
- 
-  this._user.methodCall().subscribe(productdata => this.userData = productdata);
+  ngOnInit() { 
+  this._user.methodCall().subscribe(productdata => {
+    this.userData = productdata;   
+    
+    this.userData.forEach(item => {
+       item.modifiedAdd = item.address.street + "," + item.address.suite + "," + item.address.city;
+    })
+  });
+
+
+
+  
+
+  
   }
+
 
   onClick():void {
     this.employeeData = this._user.getEmployeeDetails();
